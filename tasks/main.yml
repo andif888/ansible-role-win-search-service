@@ -4,3 +4,9 @@
   win_feature:
     name: search-service
     state: present
+
+- name: Start Search Service
+  win_service:
+    name: WSearch
+    start_mode: auto
+    state: started
