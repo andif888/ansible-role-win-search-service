@@ -1,0 +1,6 @@
+---
+# tasks file for ansible-role-win-search-service
+- name: Install Windows Feature - Search Service
+  win_feature:
+    name: search-service
+    state: present
